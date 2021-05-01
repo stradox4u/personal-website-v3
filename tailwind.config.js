@@ -9,7 +9,10 @@ module.exports = {
       fontFamily: {
         'roboto': ['Roboto', 'sans-serif'],
         'montserrat': ['Montserrat', 'sans-serif']
-      }
+      },
+      backgroundImage: theme => ({
+        'gradient-image': "url('../assets/colorBackground.jpg')",
+      })
     },
   },
   variants: {

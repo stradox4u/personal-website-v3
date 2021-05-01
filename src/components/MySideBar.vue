@@ -4,26 +4,32 @@
             <li class="text-center">
                 <i class="fas fa-home fa-2x"></i>
                 <p class="text-xs">Home</p>
+                <hr class="border border-gray-400 w-full shadow-lg mt-2">
             </li>
             <li class="text-center">
                 <i class="fas fa-laptop-code fa-2x"></i>
                 <p class="text-xs">Web Development</p>
+                <hr class="border border-gray-400 w-full shadow-lg mt-2">
             </li>
             <li class="text-center">
                 <i class="fas fa-drafting-compass fa-2x"></i>
                 <p class="text-xs">Architecture & 3d Visualisation</p>
+                <hr class="border border-gray-400 w-full shadow-lg mt-2">
             </li>
             <li class="text-center">
                 <i class="fas fa-cubes fa-2x"></i>
                 <p class="text-xs">Building Construction</p>
+                <hr class="border border-gray-400 w-full shadow-lg mt-2">
             </li>
             <li class="text-center">
                 <i class="fas fa-camera-retro fa-2x"></i>
                 <p class="text-xs">Photography</p>
+                <hr class="border border-gray-400 w-full shadow-lg mt-2">
             </li>
             <li class="text-center">
                 <i class="far fa-id-card fa-2x"></i>
                 <p class="text-xs">Contact Me</p>
+                <hr class="border border-gray-400 w-full shadow-lg mt-2">
             </li>
         </ul>
 
