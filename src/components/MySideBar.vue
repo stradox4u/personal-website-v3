@@ -1,14 +1,18 @@
 <template>
-    <nav class="w-24 h-screen bg-gray-800 p-4 rounded-md shadow-md">
+    <nav class="w-24 mt-7 h-full bg-gray-800 p-4 rounded-md shadow-md">
         <ul class="space-y-8 text-gray-50 list-none">
             <li class="text-center">
-                <i class="fas fa-home fa-2x"></i>
-                <p class="text-xs">Home</p>
+                <router-link :to="{ name: 'home' }">
+                    <i class="fas fa-home fa-2x"></i>
+                    <p class="text-xs">Home</p>
+                </router-link>
                 <hr class="border border-gray-400 w-full shadow-lg mt-2">
             </li>
             <li class="text-center">
-                <i class="fas fa-laptop-code fa-2x"></i>
-                <p class="text-xs">Web Development</p>
+                <router-link :to="{ name: 'devPortfolio' }">
+                    <i class="fas fa-laptop-code fa-2x"></i>
+                    <p class="text-xs">Web Development</p>
+                </router-link>
                 <hr class="border border-gray-400 w-full shadow-lg mt-2">
             </li>
             <li class="text-center">
