@@ -15,7 +15,7 @@
                 <h3 class="font-roboto text-base mt-4">Click through to find out more about my:</h3>
                 <div class="flex flex-row flex-wrap justify-between items-center mt-4 gap-4">
                     <router-link :to="{ name: 'devPortfolio' }" class="px-4 py-2 font-montserrat text-base font-semibold rounded-md uppercase bg-green-400 shadow-md flex-grow text-center">Web Development</router-link>
-                    <a href="#" class="px-4 py-2 font-montserrat text-base font-semibold rounded-md uppercase bg-green-400 shadow-md flex-grow text-center">Architecture & 3d Visualization</a>
+                    <router-link :to="{ name: 'architecture' }" class="px-4 py-2 font-montserrat text-base font-semibold rounded-md uppercase bg-green-400 shadow-md flex-grow text-center">Architecture & 3d Visualization</router-link>
                     <a href="#" class="px-4 py-2 font-montserrat text-base font-semibold rounded-md uppercase bg-green-400 shadow-md flex-grow text-center">Building Construction</a>
                     <a href="#" class="px-4 py-2 font-montserrat text-base font-semibold rounded-md uppercase bg-green-400 shadow-md flex-grow text-center">Photography</a>
                 </div>

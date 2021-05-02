@@ -4,6 +4,7 @@ import MyLandingPage from './components/MyLandingPage.vue'
 import MyWebPortfolio from './components/MyWebPortfolio.vue'
 import MyTodoList from './components/MyTodoList.vue'
 import MyWeatherApp from './components/MyWeatherApp.vue'
+import MyArchitectureProjects from './components/MyArchitectureProjects.vue'
 
 const router = createRouter({
     history: createWebHistory(),
@@ -18,6 +19,7 @@ const router = createRouter({
                 { path: 'weather-app', component: MyWeatherApp, name: 'weather-app' },
             ]
         },
+        { path: '/architecture', component: MyArchitectureProjects, name: 'architecture' },
     ]
 })
 

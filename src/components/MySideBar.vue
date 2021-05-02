@@ -1,5 +1,5 @@
 <template>
-    <nav class="w-24 mt-7 h-full bg-gray-800 p-4 rounded-md shadow-md">
+    <nav class="w-24 mt-7 h-auto self-stretch bg-gray-800 p-4 rounded-md shadow-md">
         <ul class="space-y-8 text-gray-50 list-none">
             <li class="text-center">
                 <router-link :to="{ name: 'home' }">
@@ -16,8 +16,10 @@
                 <hr class="border border-gray-400 w-full shadow-lg mt-2">
             </li>
             <li class="text-center">
-                <i class="fas fa-drafting-compass fa-2x"></i>
-                <p class="text-xs">Architecture & 3d Visualisation</p>
+                <router-link :to="{ name: 'architecture' }">
+                    <i class="fas fa-drafting-compass fa-2x"></i>
+                    <p class="text-xs">Architecture & 3d Visualisation</p>
+                </router-link>
                 <hr class="border border-gray-400 w-full shadow-lg mt-2">
             </li>
             <li class="text-center">
