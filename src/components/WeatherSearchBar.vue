@@ -3,7 +3,7 @@
         <form @submit.prevent="submitQuery">
             <label for="city-input" class="font-roboto text-base">Enter City Here:</label>
             <input v-model="queryCity" type="text" placeholder="City Name" class="w-full focus:outline-none focus:ring focus:ring-gray-400 p-2">
-            <base-button class="my-4">Submit</base-button>
+            <base-button class="my-4 bg-green-400" :disabled="queryCity.trim() === ''">Submit</base-button>
         </form>
     </div>
 </template>

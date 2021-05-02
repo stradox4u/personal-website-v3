@@ -1,10 +1,12 @@
 <template>
-    <app-header>Weather App</app-header>
-    <weather-search-bar @data-returned="passToPanel"></weather-search-bar>
-    <weather-panel v-if="dataReturned"
-        :displayData="data"
-        :fetchingError="fetchingError">
-    </weather-panel>
+    <div>
+        <app-header>Weather App</app-header>
+        <weather-search-bar @data-returned="passToPanel"></weather-search-bar>
+        <weather-panel v-if="dataReturned"
+            :displayData="data"
+            :fetchingError="fetchingError">
+        </weather-panel>
+    </div>
 </template>
 
 
@@ -28,7 +30,6 @@ export default {
 
         const passToPanel = function({weatherData, fetchError}) {
             if(fetchError.value) {
-                console.log(fetchError.value)
                 fetchingError.value = fetchError.value
                 dataReturned.value = true
                 return

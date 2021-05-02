@@ -1,6 +1,6 @@
 <template>
     <div v-if="!fetchingError" class="w-full p-4">
-        <h1 class="bg-gray-400 p-4 shadow-md text-white my-2 rounded-md text-xl uppercase">City: {{ displayData.name }}</h1>
+        <h1 class="bg-gray-400 p-4 shadow-md text-white my-2 rounded-md text-xl uppercase">City: {{ displayData.name }},&nbsp; {{ country }}</h1>
         <div class="flex flex-row justify-between w-full py-4 items-center">
             <img :src="iconUrl" alt="weather icon" class="w-24">
             <div>
@@ -47,10 +47,14 @@ export default {
             return props.displayData.weather[0].description.charAt(0).toUpperCase() + props.displayData.weather[0].description.slice(1)
         })
 
+        const country = computed(function() {
+            return props.displayData.sys.country
+        })
 
         return {
             iconUrl,
             description,
+            country,
         }
     }
 }
