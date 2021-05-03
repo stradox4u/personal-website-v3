@@ -10,6 +10,7 @@
         </a>
         <hr class="border border-gray-400 my-4">
         <p class="font-roboto italic text-sm">{{ item.description }}</p>
+        <p class="font-roboto italic text-xs">Local apps open below</p>
     </div>
 </template>
 

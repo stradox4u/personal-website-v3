@@ -1,6 +1,6 @@
 <template>
-    <nav class="w-24 mt-7 h-auto self-stretch bg-gray-800 p-4 rounded-md shadow-md">
-        <ul class="space-y-8 text-gray-50 list-none">
+    <nav class="sm:w-24 w-full sm:mt-7 mt-2 h-auto self-stretch bg-gray-800 p-4 rounded-md shadow-md">
+        <ul class="sm:space-y-8 space-y-2 text-gray-50 list-none">
             <li class="text-center">
                 <router-link :to="{ name: 'home' }">
                     <i class="fas fa-home fa-2x transform hover:scale-110"></i>

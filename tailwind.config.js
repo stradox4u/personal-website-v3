@@ -1,7 +1,7 @@
 module.exports = {
   purge: [
-    // './src/**/*.html',
-    // './src/**/*.js',
+    './public/index.html',
+    './src/**/*.{vue, js, ts, jsx, tsx}',
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
@@ -10,9 +10,9 @@ module.exports = {
         'roboto': ['Roboto', 'sans-serif'],
         'montserrat': ['Montserrat', 'sans-serif']
       },
-      backgroundImage: theme => ({
-        'gradient-image': "url('../assets/colorBackground.jpg')",
-      })
+      backgroundImage: {
+        'gradient-image': "url('../../assets/colorBackground.jpg')"
+      }
     },
   },
   variants: {
