@@ -16,7 +16,7 @@
 import projects from '../devProjects.js'
 import ProjectCard from './Ui/MyProjectCard.vue'
 import { useRoute } from 'vue-router'
-import { ref, watch } from 'vue'
+import { computed } from 'vue'
 
 
 export default {
@@ -25,14 +25,19 @@ export default {
     },
     setup() {
         const portfolioItems = projects
-        const activeApp = ref(null)       
+    
 
-        const route = useRoute()
-        watch(route, (newVal) => {
-            if(newVal.path === '/web-portfolio/todo-list') {
-                activeApp.value = 'Todo'
-            } else if(newVal.path === '/web-portfolio/weather-app') {
-                activeApp.value = 'Weather'
+        const currentPath = computed(() => {
+            return useRoute().path
+        })
+
+        const activeApp = computed(() => {
+            if(currentPath.value === '/web-portfolio/todo-list') {
+                return 'Todo'
+            } else if(currentPath.value === '/web-portfolio/weather-app') {
+                return 'Weather'
+            } else {
+                return null
             }
         })
 

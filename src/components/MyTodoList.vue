@@ -34,7 +34,6 @@ export default {
                 todo: itemInput.value,
                 status: 'undone'
             })
-            console.log(itemsArray.value);
             itemInput.value = ''
         }
 

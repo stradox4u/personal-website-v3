@@ -1,12 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-import MyLandingPage from './components/MyLandingPage.vue'
-import MyWebPortfolio from './components/MyWebPortfolio.vue'
-import MyTodoList from './components/MyTodoList.vue'
-import MyWeatherApp from './components/MyWeatherApp.vue'
-import MyArchitectureProjects from './components/MyArchitectureProjects.vue'
-import MyConstructionProjects from './components/MyConstructionProjects.vue'
-import MyPhotography from './components/MyPhotography.vue'
+const MyLandingPage = () => import('./components/MyLandingPage.vue')
+const MyWebPortfolio = () => import('./components/MyWebPortfolio.vue')
+const MyTodoList = () => import('./components/MyTodoList.vue')
+const MyWeatherApp = () => import('./components/MyWeatherApp.vue')
+const MyArchitectureProjects = () => import('./components/MyArchitectureProjects.vue')
+const MyConstructionProjects = () => import('./components/MyConstructionProjects.vue')
+const MyPhotography = () => import('./components/MyPhotography.vue')
+const NotFoundComponent = () => import('./components/NotFound.vue')
 
 const router = createRouter({
     history: createWebHistory(),
@@ -24,6 +25,8 @@ const router = createRouter({
         { path: '/architecture', component: MyArchitectureProjects, name: 'architecture' },
         { path: '/construction', component: MyConstructionProjects, name: 'construction' },
         { path: '/photography', component: MyPhotography, name: 'photography' },
+        { path: '/:pathMatch(.*)', component: NotFoundComponent },
+        { path: '/*', redirect: '/' },
     ]
 })
 
