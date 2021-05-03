@@ -6,7 +6,7 @@
             <h2 class="font-roboto italic text-sm text-center">Architect | PHP Laravel, Javascript and Vue JS Full Stack Developer</h2>
         </div>
         <div class="w-full relative bg-gray-200 shadow-md rounded-md p-4 flex flex-row gap-6 mt-4">
-            <img :src="require('../assets/vertical-photo.jpg')" alt="" class="w-60 h-auto object-cover shadow-md absolute -top-12">
+            <img :src="require('../assets/profilePhoto.jpg')" alt="" class="w-60 h-auto object-cover shadow-md absolute -top-12">
             <div class="ml-72">
                 <h2 class="text-xl font-semibold font-montserrat">About Me</h2>
                 <hr class="ml-6 border border-gray-500 w-2/12">
@@ -16,8 +16,8 @@
                 <div class="flex flex-row flex-wrap justify-between items-center mt-4 gap-4">
                     <router-link :to="{ name: 'devPortfolio' }" class="px-4 py-2 font-montserrat text-base font-semibold rounded-md uppercase bg-green-400 shadow-md flex-grow text-center">Web Development</router-link>
                     <router-link :to="{ name: 'architecture' }" class="px-4 py-2 font-montserrat text-base font-semibold rounded-md uppercase bg-green-400 shadow-md flex-grow text-center">Architecture & 3d Visualization</router-link>
-                    <a href="#" class="px-4 py-2 font-montserrat text-base font-semibold rounded-md uppercase bg-green-400 shadow-md flex-grow text-center">Building Construction</a>
-                    <a href="#" class="px-4 py-2 font-montserrat text-base font-semibold rounded-md uppercase bg-green-400 shadow-md flex-grow text-center">Photography</a>
+                    <router-link :to="{ name: 'construction' }" class="px-4 py-2 font-montserrat text-base font-semibold rounded-md uppercase bg-green-400 shadow-md flex-grow text-center">Building Construction</router-link>
+                    <router-link :to="{ name: 'photography' }" class="px-4 py-2 font-montserrat text-base font-semibold rounded-md uppercase bg-green-400 shadow-md flex-grow text-center">Photography</router-link>
                 </div>
             </div>
         </div>
