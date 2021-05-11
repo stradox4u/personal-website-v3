@@ -12,6 +12,12 @@ const projects = [
         image: require('./assets/weather-image.jpg'),
     },
     {
+        name: 'Tarot Card Reader',
+        route: { name: 'tarot-reader' },
+        description: 'An app to randomly select from a deck of tarot cards and provide interpretations',
+        image: require('./assets/tarotImage.jpeg'),
+    },
+    {
         name: 'Farmitrade',
         route: 'https://farmitrade.com.ng',
         description: 'An app to connect farmers in the rural areas to bulk consumers/traders in the urban areas, to facilitate direct trade of farm produce, thereby cutting down waste.',
@@ -22,7 +28,7 @@ const projects = [
         route: 'https://archifolios.ng',
         description: 'A portfolio app for Nigerian architects to allow them to showcase their works to intending clients and be more easily hired, while also easing the selection process for the clients.',
         image: require('./assets/archifolios-image.png'),
-    }
+    },
 ]
 
 export default projects

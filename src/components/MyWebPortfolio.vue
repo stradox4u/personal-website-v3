@@ -36,6 +36,8 @@ export default {
                 return 'Todo'
             } else if(currentPath.value === '/web-portfolio/weather-app') {
                 return 'Weather'
+            } else if(currentPath.value === '/web-portfolio/tarot') {
+                return 'Tarot'
             } else {
                 return null
             }

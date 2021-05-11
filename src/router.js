@@ -7,6 +7,7 @@ const MyWeatherApp = () => import('./components/MyWeatherApp.vue')
 const MyArchitectureProjects = () => import('./components/MyArchitectureProjects.vue')
 const MyConstructionProjects = () => import('./components/MyConstructionProjects.vue')
 const MyPhotography = () => import('./components/MyPhotography.vue')
+const MyTarotCardReader = () => import('./components/TarotReader.vue')
 const NotFoundComponent = () => import('./components/NotFound.vue')
 
 const router = createRouter({
@@ -20,6 +21,7 @@ const router = createRouter({
             children: [
                 { path: 'todo-list', component: MyTodoList, name: 'todo-list' },
                 { path: 'weather-app', component: MyWeatherApp, name: 'weather-app' },
+                { path: 'tarot', component: MyTarotCardReader, name: 'tarot-reader' },
             ]
         },
         { path: '/architecture', component: MyArchitectureProjects, name: 'architecture' },
