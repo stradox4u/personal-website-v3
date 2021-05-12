@@ -18,5 +18,6 @@ export default {
             openCarousel,
         }
     },
+    emits: ['imgClicked'],
 }
 </script>

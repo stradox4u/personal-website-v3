@@ -27,6 +27,7 @@ export default {
             toggleReveal,
         }
     },
+    emits: ['cardRevealed'],
 }
 </script>
 

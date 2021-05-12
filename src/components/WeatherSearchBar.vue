@@ -41,5 +41,6 @@ export default {
             submitQuery,
         }
     },
+    emits: ['data-returned'],
 }
 </script>
