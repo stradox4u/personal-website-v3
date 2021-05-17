@@ -1,5 +1,5 @@
 <template>
-    <app-header>Tarot Card Reader</app-header>
+    <app-header class="my-2">Tarot Card Reader</app-header>
     <base-button @click="reloadCards" class="bg-yellow-400 sm:w-1/3 w-2/3 mx-auto">Reshuffle Cards</base-button>
     <div class="grid sm:grid-cols-4 grid-cols-2 sm:gap-4 gap-12 mx-auto">
         <tarot-card
