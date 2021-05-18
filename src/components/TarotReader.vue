@@ -1,7 +1,7 @@
 <template>
-    <app-header class="my-2">Tarot Card Reader</app-header>
+    <app-header class="mb-4">Tarot Card Reader</app-header>
     <base-button @click="reloadCards" class="bg-yellow-400 sm:w-1/3 w-2/3 mx-auto">Reshuffle Cards</base-button>
-    <div class="grid sm:grid-cols-4 grid-cols-2 sm:gap-4 gap-12 mx-auto">
+    <div class="grid sm:grid-cols-4 grid-cols-2 sm:gap-4 gap-12 my-4 mx-auto">
         <tarot-card
             v-for="(card, index) in tarotCards" :key="card.name"
             @cardRevealed="revealMeaning"
@@ -12,7 +12,7 @@
         </tarot-card>
     </div>
     <transition appear name="inter-show">
-        <div v-if="meaningsRevealed" class="w-full mx-auto p-2">
+        <div v-if="meaningsRevealed" class="w-full mx-auto p-2 my-2">
             <h3 class="font-semibold text-base font-roboto text-center">Interpretations</h3>
             <ul>
                 <transition-group name="interpretations">

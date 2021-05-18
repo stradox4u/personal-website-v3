@@ -13,7 +13,7 @@
                 <p class="font-roboto text-base mt-4">My name is Odeh Adejoh. I'm a registered architect and full stack developer based in Abuja, Nigeria. I'm a passionate and dedicated professional with 11 years architecture experience and 3 years web development experience.</p>
                 <p class="font-roboto text-base mt-4">I am proficient with Html 5, CSS, Javascript, PHP, Laravel, Bootstrap, Tailwind CSS, Vue Js and Inertia Js. I am able to build full stack web apps as required using any mix of these technologies.</p>
                 <h3 class="font-roboto text-base mt-4">Click through to find out more about my:</h3>
-                <div class="flex flex-row flex-wrap justify-between items-center mt-4 gap-4">
+                <div class="flex sm:flex-row flex-col flex-wrap justify-between items-center mt-4 gap-4">
                     <router-link :to="{ name: 'devPortfolio' }" class="px-4 py-2 font-montserrat text-base font-semibold rounded-md uppercase bg-green-400 shadow-md flex-grow text-center">Web Development</router-link>
                     <router-link :to="{ name: 'architecture' }" class="px-4 py-2 font-montserrat text-base font-semibold rounded-md uppercase bg-green-400 shadow-md flex-grow text-center">Architecture & 3d Visualization</router-link>
                     <router-link :to="{ name: 'construction' }" class="px-4 py-2 font-montserrat text-base font-semibold rounded-md uppercase bg-green-400 shadow-md flex-grow text-center">Building Construction</router-link>
