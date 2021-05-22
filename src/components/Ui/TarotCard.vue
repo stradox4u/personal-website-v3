@@ -1,7 +1,7 @@
 <template>
     <div>
         <transition appear name="image" mode="out-in">
-            <img @click="toggleReveal" v-if="!revealed" :src="backOfCard" alt="card back" class="w-20 h-40 object-fill rounded-md shadow-md">
+            <img @click="toggleReveal" v-if="!revealed" :src="backOfCard" alt="card back" class="w-20 h-40 object-fill rounded-md shadow-md cursor-pointer transform hover:scale-105">
             <img v-else :src="tarotImage" alt="tarot card image" class="w-20 h-40 object-fill rounded-md shadow-md">
         </transition>
     </div>

@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 const MyLandingPage = () => import('./components/MyLandingPage.vue')
 const MyWebPortfolio = () => import('./components/MyWebPortfolio.vue')
+const MyLocalApps = () => import('./components/MyLocalApps.vue')
 const MyTodoList = () => import('./components/MyTodoList.vue')
 const MyWeatherApp = () => import('./components/MyWeatherApp.vue')
 const MyArchitectureProjects = () => import('./components/MyArchitectureProjects.vue')
@@ -14,10 +15,11 @@ const router = createRouter({
     history: createWebHistory(),
     routes: [
         { path: '/', component: MyLandingPage, name: 'home' },
+        { path: '/web-portfolio', component: MyWebPortfolio, name: 'devPortfolio' },
         {
-            path: '/web-portfolio',
-            component: MyWebPortfolio,
-            name: 'devPortfolio',
+            path: '/local-apps',
+            component: MyLocalApps,
+            name: 'localApps',
             children: [
                 { path: 'todo-list', component: MyTodoList, name: 'todo-list' },
                 { path: 'weather-app', component: MyWeatherApp, name: 'weather-app' },

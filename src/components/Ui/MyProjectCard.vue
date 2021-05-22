@@ -1,5 +1,5 @@
 <template>
-    <div class="container w-full col-span-1 p-4 bg-white">
+    <div class="container w-full col-span-1 p-4 bg-white transform hover:scale-105">
         <router-link v-if="(typeof item.route !== 'string')" :to="item.route">
             <img :src="item.image" :alt="item.name + 'image'" class="h-auto w-full object-cover mb-4">
             <p class="font-montserrat font-semibold text-base">{{ item.name }}</p>
@@ -10,7 +10,6 @@
         </a>
         <hr class="border border-gray-400 my-4">
         <p class="font-roboto italic text-sm">{{ item.description }}</p>
-        <p class="font-roboto italic text-xs">Local apps open below</p>
     </div>
 </template>
 

@@ -1,7 +1,7 @@
 <template>
     <div>
         <app-header>To Do List</app-header>
-        <form @submit.prevent="addItem" class="w-full my-4 inline-flex space-x-8">
+        <form @submit.prevent="addItem" class="w-full my-4 flex sm:flex-row flex-col items-center gap-8">
             <input v-model="itemInput" type="text" placeholder="Enter Item Here" class="w-full focus:outline-none focus:ring focus:ring-gray-500 p-2 rounded-md">
             <base-button class="bg-green-400" :disabled="itemInput.trim() === ''">Submit</base-button>
         </form>

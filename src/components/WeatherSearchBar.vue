@@ -1,9 +1,9 @@
 <template>
     <div class="w-full p-4 mx-auto">
-        <form @submit.prevent="submitQuery">
+        <form @submit.prevent="submitQuery" class="flex flex-col gap-4">
             <label for="city-input" class="font-roboto text-base">Enter City Here:</label>
             <input v-model="queryCity" type="text" placeholder="City Name" class="w-full focus:outline-none focus:ring focus:ring-gray-400 p-2">
-            <base-button class="my-4 bg-green-400" :disabled="queryCity.trim() === ''">Submit</base-button>
+            <base-button class="bg-green-400 mx-auto" :disabled="queryCity.trim() === ''">Submit</base-button>
         </form>
     </div>
 </template>
