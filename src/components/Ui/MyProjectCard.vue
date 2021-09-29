@@ -5,7 +5,9 @@
             <p class="font-montserrat font-semibold text-base">{{ item.name }}</p>
         </router-link>
         <a v-else :href="item.route" class="text-decoration-none">
-            <img :src="item.image" :alt="item.name + 'image'" class="h-32 w-auto mb-4">
+            <div class="aspect-w-6 aspect-h-6 w-full">
+                <img :src="item.image" :alt="item.name + 'image'" class="mb-4 object-cover">
+            </div>
             <p class="font-montserrat font-semibold text-base">{{ item.name }}</p>
         </a>
         <hr class="border border-gray-400 my-4">
